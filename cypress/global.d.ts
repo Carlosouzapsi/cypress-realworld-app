@@ -38,7 +38,6 @@ declare namespace Cypress {
      *  Window object with additional properties used during test.
      */
     window(options?: Partial<Loggable & Timeoutable>): Chainable<CustomWindow>;
-
     /**
      * Custom command to make taking Percy snapshots with full name formed from the test title + suffix easier
      */
