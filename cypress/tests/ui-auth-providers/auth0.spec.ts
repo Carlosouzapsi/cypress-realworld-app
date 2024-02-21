@@ -11,7 +11,6 @@ if (Cypress.env("auth0_username")) {
 
     it("should allow a visitor to login, onboard and logout", function () {
       cy.contains("Get Started").should("be.visible");
-
       // Onboarding
       cy.getBySel("user-onboarding-dialog").should("be.visible");
       cy.getBySel("user-onboarding-next").click();
